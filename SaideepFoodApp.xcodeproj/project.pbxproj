@@ -16,6 +16,7 @@
 		A5D3A4D22C9B5AA000421592 /* SaideepFoodAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3A4D12C9B5AA000421592 /* SaideepFoodAppTests.swift */; };
 		A5D3A4DC2C9B5AA000421592 /* SaideepFoodAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3A4DB2C9B5AA000421592 /* SaideepFoodAppUITests.swift */; };
 		A5D3A4DE2C9B5AA000421592 /* SaideepFoodAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3A4DD2C9B5AA000421592 /* SaideepFoodAppUITestsLaunchTests.swift */; };
+		A5D3A4F22C9B635B00421592 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D3A4F12C9B635B00421592 /* SplashScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A5D3A4D72C9B5AA000421592 /* SaideepFoodAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaideepFoodAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D3A4DB2C9B5AA000421592 /* SaideepFoodAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaideepFoodAppUITests.swift; sourceTree = "<group>"; };
 		A5D3A4DD2C9B5AA000421592 /* SaideepFoodAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaideepFoodAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A5D3A4F12C9B635B00421592 /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,15 +101,14 @@
 		A5D3A4B92C9B5A9E00421592 /* SaideepFoodApp */ = {
 			isa = PBXGroup;
 			children = (
+				A5D3A4F02C9B62EF00421592 /* Storyboards */,
 				A5D3A4BA2C9B5A9E00421592 /* AppDelegate.swift */,
 				A5D3A4BC2C9B5A9E00421592 /* SceneDelegate.swift */,
 				A5D3A4EE2C9B5E7900421592 /* DataModels */,
 				A5D3A4ED2C9B5CCD00421592 /* SignIn */,
 				A5D3A4EC2C9B5CBD00421592 /* SignUp */,
 				A5D3A4BE2C9B5A9E00421592 /* ViewController.swift */,
-				A5D3A4C02C9B5A9E00421592 /* Main.storyboard */,
 				A5D3A4C32C9B5AA000421592 /* Assets.xcassets */,
-				A5D3A4C52C9B5AA000421592 /* LaunchScreen.storyboard */,
 				A5D3A4C82C9B5AA000421592 /* Info.plist */,
 			);
 			path = SaideepFoodApp;
@@ -147,8 +148,26 @@
 		A5D3A4EE2C9B5E7900421592 /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
+				A5D3A4EF2C9B62C300421592 /* Storyboards */,
 			);
 			path = DataModels;
+			sourceTree = "<group>";
+		};
+		A5D3A4EF2C9B62C300421592 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A5D3A4F02C9B62EF00421592 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A5D3A4C02C9B5A9E00421592 /* Main.storyboard */,
+				A5D3A4F12C9B635B00421592 /* SplashScreen.storyboard */,
+				A5D3A4C52C9B5AA000421592 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5D3A4C42C9B5AA000421592 /* Assets.xcassets in Resources */,
+				A5D3A4F22C9B635B00421592 /* SplashScreen.storyboard in Resources */,
 				A5D3A4C72C9B5AA000421592 /* Base in Resources */,
 				A5D3A4C22C9B5A9E00421592 /* Base in Resources */,
 			);
