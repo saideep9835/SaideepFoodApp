@@ -17,6 +17,7 @@
 		A5D3A4DC2C9B5AA000421592 /* SaideepFoodAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3A4DB2C9B5AA000421592 /* SaideepFoodAppUITests.swift */; };
 		A5D3A4DE2C9B5AA000421592 /* SaideepFoodAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3A4DD2C9B5AA000421592 /* SaideepFoodAppUITestsLaunchTests.swift */; };
 		A5D3A4F22C9B635B00421592 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D3A4F12C9B635B00421592 /* SplashScreen.storyboard */; };
+		A5D3A4F42C9B674B00421592 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3A4F32C9B674B00421592 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A5D3A4DB2C9B5AA000421592 /* SaideepFoodAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaideepFoodAppUITests.swift; sourceTree = "<group>"; };
 		A5D3A4DD2C9B5AA000421592 /* SaideepFoodAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaideepFoodAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A5D3A4F12C9B635B00421592 /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
+		A5D3A4F32C9B674B00421592 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		A5D3A4ED2C9B5CCD00421592 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
+				A5D3A4F32C9B674B00421592 /* SignInViewController.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D3A4F42C9B674B00421592 /* SignInViewController.swift in Sources */,
 				A5D3A4BF2C9B5A9E00421592 /* ViewController.swift in Sources */,
 				A5D3A4BB2C9B5A9E00421592 /* AppDelegate.swift in Sources */,
 				A5D3A4BD2C9B5A9E00421592 /* SceneDelegate.swift in Sources */,
