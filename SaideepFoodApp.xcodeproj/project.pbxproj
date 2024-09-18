@@ -101,6 +101,8 @@
 			children = (
 				A5D3A4BA2C9B5A9E00421592 /* AppDelegate.swift */,
 				A5D3A4BC2C9B5A9E00421592 /* SceneDelegate.swift */,
+				A5D3A4ED2C9B5CCD00421592 /* SignIn */,
+				A5D3A4EC2C9B5CBD00421592 /* SignUp */,
 				A5D3A4BE2C9B5A9E00421592 /* ViewController.swift */,
 				A5D3A4C02C9B5A9E00421592 /* Main.storyboard */,
 				A5D3A4C32C9B5AA000421592 /* Assets.xcassets */,
@@ -125,6 +127,20 @@
 				A5D3A4DD2C9B5AA000421592 /* SaideepFoodAppUITestsLaunchTests.swift */,
 			);
 			path = SaideepFoodAppUITests;
+			sourceTree = "<group>";
+		};
+		A5D3A4EC2C9B5CBD00421592 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		A5D3A4ED2C9B5CCD00421592 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
