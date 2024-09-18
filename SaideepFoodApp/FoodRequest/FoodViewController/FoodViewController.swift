@@ -10,7 +10,7 @@ import UIKit
 class FoodViewController: UIViewController,  APIFetchDelegate{
     
 
-    var viewModel = FoodViewModel()
+    let viewModel = FoodViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.fetchData()

@@ -12,6 +12,10 @@ import Foundation
 
 struct FoodMenu: Codable {
     let foodGroups: [FoodGroup]
+    
+    enum CodingKeys: String, CodingKey{
+        case foodGroups = "food_groups"
+    }
 }
 
 struct FoodGroup: Codable {

@@ -15,14 +15,12 @@ protocol APIFetchDelegate: AnyObject {
 class FoodViewModel{
     weak var delegate: APIFetchDelegate?
     
-    init() {
-        // APIManager.shared.delegate = self  // Set the delegate
-    }
-    
     func fetchData(){
-        guard let apiUrl = URL(string: Constants.apiUrl.rawValue) else{return }
-        
-        FoodAPI.shared.getData(model: FoodMenu.self, url: apiUrl) { [weak self ]result in
+        guard let apiUrl = URL(string: Constants.apiUrl.rawValue) else{ print("Invalid URL")
+            return
+        }
+        print(apiUrl)
+        FoodAPI.shared.getData(model: FoodMenu.self, url: apiUrl) { [weak self] result in
             switch result {
             case .success(let data):
                 print(data)
