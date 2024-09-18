@@ -9,6 +9,11 @@ import UIKit
 
 class SignInViewController: UIViewController {
 
+    @IBAction func passwordText(_ sender: UITextField) {
+    }
+   
+    @IBAction func emailText(_ sender: UITextField) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -16,6 +21,8 @@ class SignInViewController: UIViewController {
     }
     
 
+    @IBAction func loginButton(_ sender: UIButton) {
+    }
     /*
     // MARK: - Navigation
 

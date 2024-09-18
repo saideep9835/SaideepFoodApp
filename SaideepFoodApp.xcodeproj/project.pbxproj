@@ -20,6 +20,11 @@
 		A5D3A4F42C9B674B00421592 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3A4F32C9B674B00421592 /* SignInViewController.swift */; };
 		A5D3A4F62C9B707500421592 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3A4F52C9B707500421592 /* UserDetails.swift */; };
 		A5D3A4F82C9B72A500421592 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3A4F72C9B72A500421592 /* SignInViewModel.swift */; };
+		A5D3A4FB2C9B760C00421592 /* FoodDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3A4FA2C9B760C00421592 /* FoodDetails.swift */; };
+		A5D3A4FD2C9B773400421592 /* FoodAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3A4FC2C9B773400421592 /* FoodAPI.swift */; };
+		A5D3A5012C9B78AB00421592 /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3A5002C9B78AB00421592 /* FoodViewModel.swift */; };
+		A5D3A5042C9B78CD00421592 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3A5032C9B78CD00421592 /* FoodViewController.swift */; };
+		A5D3A5072C9B79D300421592 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3A5062C9B79D300421592 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,11 @@
 		A5D3A4F32C9B674B00421592 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		A5D3A4F52C9B707500421592 /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
 		A5D3A4F72C9B72A500421592 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		A5D3A4FA2C9B760C00421592 /* FoodDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetails.swift; sourceTree = "<group>"; };
+		A5D3A4FC2C9B773400421592 /* FoodAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAPI.swift; sourceTree = "<group>"; };
+		A5D3A5002C9B78AB00421592 /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
+		A5D3A5032C9B78CD00421592 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		A5D3A5062C9B79D300421592 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +117,8 @@
 		A5D3A4B92C9B5A9E00421592 /* SaideepFoodApp */ = {
 			isa = PBXGroup;
 			children = (
+				A5D3A5052C9B79C100421592 /* Constants */,
+				A5D3A4FE2C9B786E00421592 /* FoodRequest */,
 				A5D3A4F02C9B62EF00421592 /* Storyboards */,
 				A5D3A4BA2C9B5A9E00421592 /* AppDelegate.swift */,
 				A5D3A4BC2C9B5A9E00421592 /* SceneDelegate.swift */,
@@ -158,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				A5D3A4F52C9B707500421592 /* UserDetails.swift */,
+				A5D3A4FA2C9B760C00421592 /* FoodDetails.swift */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -175,8 +188,42 @@
 		A5D3A4F92C9B72B100421592 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A5D3A4FC2C9B773400421592 /* FoodAPI.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		A5D3A4FE2C9B786E00421592 /* FoodRequest */ = {
+			isa = PBXGroup;
+			children = (
+				A5D3A5022C9B78B200421592 /* FoodViewController */,
+				A5D3A4FF2C9B788F00421592 /* FoodViewModel */,
+			);
+			path = FoodRequest;
+			sourceTree = "<group>";
+		};
+		A5D3A4FF2C9B788F00421592 /* FoodViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A5D3A5002C9B78AB00421592 /* FoodViewModel.swift */,
+			);
+			path = FoodViewModel;
+			sourceTree = "<group>";
+		};
+		A5D3A5022C9B78B200421592 /* FoodViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A5D3A5032C9B78CD00421592 /* FoodViewController.swift */,
+			);
+			path = FoodViewController;
+			sourceTree = "<group>";
+		};
+		A5D3A5052C9B79C100421592 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A5D3A5062C9B79D300421592 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,9 +359,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5D3A4F42C9B674B00421592 /* SignInViewController.swift in Sources */,
+				A5D3A5072C9B79D300421592 /* Constants.swift in Sources */,
 				A5D3A4BF2C9B5A9E00421592 /* ViewController.swift in Sources */,
+				A5D3A4FD2C9B773400421592 /* FoodAPI.swift in Sources */,
 				A5D3A4F82C9B72A500421592 /* SignInViewModel.swift in Sources */,
 				A5D3A4BB2C9B5A9E00421592 /* AppDelegate.swift in Sources */,
+				A5D3A5012C9B78AB00421592 /* FoodViewModel.swift in Sources */,
+				A5D3A5042C9B78CD00421592 /* FoodViewController.swift in Sources */,
+				A5D3A4FB2C9B760C00421592 /* FoodDetails.swift in Sources */,
 				A5D3A4BD2C9B5A9E00421592 /* SceneDelegate.swift in Sources */,
 				A5D3A4F62C9B707500421592 /* UserDetails.swift in Sources */,
 			);
