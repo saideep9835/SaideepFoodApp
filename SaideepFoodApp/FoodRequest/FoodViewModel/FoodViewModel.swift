@@ -23,10 +23,8 @@ class FoodViewModel{
         FoodAPI.shared.getData(model: FoodMenu.self, url: apiUrl) { [weak self] result in
             switch result {
             case .success(let data):
-                print(data)
                 self?.delegate?.didFetchData(data)
             case .failure(let failure):
-                print(failure)
                 self?.delegate?.didFailWithError(failure)
             }
         }

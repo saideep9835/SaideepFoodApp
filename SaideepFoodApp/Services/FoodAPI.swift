@@ -28,7 +28,6 @@ class FoodAPI{
             do{
                 let decodedData = try JSONDecoder().decode(T.self, from: data)
                     completion(.success(decodedData))
-                print("Decoded Data: \(decodedData)")
                 } catch {
                     
                     completion(.failure(error))
