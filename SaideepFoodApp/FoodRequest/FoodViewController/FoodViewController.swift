@@ -49,17 +49,19 @@ extension FoodViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = self.tableView.dequeueReusableCell(withIdentifier: "FoodGroupTVC", for: indexPath) as? FoodGroupTVC else{return UITableViewCell()}
+    
         let foodtype = foodGroupData[indexPath.row]
+        let url = URL(string: foodtype.imageURL)
+        
         cell.foodNameLabel.text = foodtype.name
         cell.foodDescriptionLabel.text = foodtype.description
-        
-
-        let url = URL(string: foodtype.imageURL)
         cell.foodImageView.kf.setImage(with: url)
         //cell.foodImage.image = UIImage(named: foodtype.imageURL)
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedCell = storyboard?.instantiateViewController(withIdentifier: <#T##String#>)
+    }
     
 }
 
