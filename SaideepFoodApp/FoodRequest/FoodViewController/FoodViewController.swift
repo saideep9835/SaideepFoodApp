@@ -13,6 +13,7 @@ class FoodViewController: UIViewController,  APIFetchDelegate{
     
     var foodGroupData: [FoodGroup] = []
     let viewModel = FoodViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
@@ -56,11 +57,19 @@ extension FoodViewController: UITableViewDelegate, UITableViewDataSource{
         cell.foodNameLabel.text = foodtype.name
         cell.foodDescriptionLabel.text = foodtype.description
         cell.foodImageView.kf.setImage(with: url)
-        //cell.foodImage.image = UIImage(named: foodtype.imageURL)
+      
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedCell = storyboard?.instantiateViewController(withIdentifier: <#T##String#>)
+        
+        let selectedCategory = foodGroupData[indexPath.row].name
+    
+            print("Selected Category: \(selectedCategory)")
+
+        let selectedFoodGroup = foodGroupData[indexPath.row].foodItems
+        guard let selectedCell = storyboard?.instantiateViewController(withIdentifier: "FoodDisplayTV") as? FoodDisplayTV else{return}
+        selectedCell.selectedFoodCategory = selectedFoodGroup
+        navigationController?.pushViewController(selectedCell, animated: true)
     }
     
 }

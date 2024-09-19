@@ -9,6 +9,7 @@ import Foundation
 
 protocol APIFetchDelegate: AnyObject {
     func didFetchData(_ data: FoodMenu) // it should not be optional
+    
     func didFailWithError(_ error: Error)
 }
 
