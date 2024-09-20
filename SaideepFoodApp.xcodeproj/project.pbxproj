@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A56216F62C9CACDB008D2FFA /* FoodDisplayTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56216F52C9CACDB008D2FFA /* FoodDisplayTV.swift */; };
 		A56216F82C9CAE26008D2FFA /* FoodDisplayTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56216F72C9CAE26008D2FFA /* FoodDisplayTVC.swift */; };
+		A56216FA2C9D129B008D2FFA /* FoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56216F92C9D129A008D2FFA /* FoodDetailViewController.swift */; };
 		A57D73352C9C451100852295 /* FoodGroupTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D73342C9C451100852295 /* FoodGroupTVC.swift */; };
 		A57D73852C9C836C00852295 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A57D73842C9C836C00852295 /* Kingfisher */; };
 		A5D3A4BB2C9B5A9E00421592 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3A4BA2C9B5A9E00421592 /* AppDelegate.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		A56216F52C9CACDB008D2FFA /* FoodDisplayTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDisplayTV.swift; sourceTree = "<group>"; };
 		A56216F72C9CAE26008D2FFA /* FoodDisplayTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDisplayTVC.swift; sourceTree = "<group>"; };
+		A56216F92C9D129A008D2FFA /* FoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailViewController.swift; sourceTree = "<group>"; };
 		A57D73342C9C451100852295 /* FoodGroupTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodGroupTVC.swift; sourceTree = "<group>"; };
 		A5D3A4B72C9B5A9E00421592 /* SaideepFoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaideepFoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D3A4BA2C9B5A9E00421592 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				A57D73332C9C448900852295 /* Cell */,
 				A5D3A5032C9B78CD00421592 /* FoodViewController.swift */,
 				A56216F52C9CACDB008D2FFA /* FoodDisplayTV.swift */,
+				A56216F92C9D129A008D2FFA /* FoodDetailViewController.swift */,
 			);
 			path = FoodViewController;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				A56216F62C9CACDB008D2FFA /* FoodDisplayTV.swift in Sources */,
 				A5D3A4F42C9B674B00421592 /* SignInViewController.swift in Sources */,
 				A5D3A5072C9B79D300421592 /* Constants.swift in Sources */,
+				A56216FA2C9D129B008D2FFA /* FoodDetailViewController.swift in Sources */,
 				A5D3A4BF2C9B5A9E00421592 /* ViewController.swift in Sources */,
 				A56216F82C9CAE26008D2FFA /* FoodDisplayTVC.swift in Sources */,
 				A5D3A4FD2C9B773400421592 /* FoodAPI.swift in Sources */,

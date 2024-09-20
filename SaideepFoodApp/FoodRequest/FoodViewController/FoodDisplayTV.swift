@@ -7,17 +7,24 @@
 
 import UIKit
 import Kingfisher
-class FoodDisplayTV: UIViewController {
+class FoodDisplayTV: UIViewController{
     
     @IBOutlet weak var tableView: UITableView!
     
+    //@IBOutlet weak var incrementCart: UIButton!
     var selectedFoodCategory: [FoodItem] = []
-    
+    //let viewModel = FoodViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        //viewModel.cartDelegate = self
         // Do any additional setup after loading the view.
+        //incrementCart.setTitle("0", for: .normal)
+    }
+    
+    @IBAction func buttonClicked(_ sender: UIButton) {
+        //viewModel.cartButton()
     }
     
 }
@@ -25,7 +32,6 @@ class FoodDisplayTV: UIViewController {
 extension FoodDisplayTV: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(selectedFoodCategory.count)
         return selectedFoodCategory.count
     }
     
@@ -39,5 +45,14 @@ extension FoodDisplayTV: UITableViewDataSource, UITableViewDelegate{
         let url = URL(string: foodItem.imageURL)
         selectedFood.itemImageLabel.kf.setImage(with: url)
         return selectedFood
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedFoodItem = selectedFoodCategory[indexPath.row]
+        if let detailViewController = storyboard?.instantiateViewController(withIdentifier: "FoodDetailViewController") as? FoodDetailViewController {
+                detailViewController.foodItem = selectedFoodItem  // Pass the specific item to the detail view controller
+               present(detailViewController, animated: true, completion: nil)
+            }
+
+            tableView.deselectRow(at: indexPath, animated: true)
     }
 }

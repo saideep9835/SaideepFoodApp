@@ -402,6 +402,84 @@
             </objects>
             <point key="canvasLocation" x="3194.6564885496182" y="3.5211267605633805"/>
         </scene>
+        <!--Food Detail View Controller-->
+        <scene sceneID="2be-5j-4f8">
+            <objects>
+                <viewController storyboardIdentifier="FoodDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iHr-Vy-H4k" customClass="FoodDetailViewController" customModule="SaideepFoodApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qSX-6i-pwr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DRk-bf-FH6">
+                                <rect key="frame" x="0.0" y="80" width="393" height="293"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="393" id="3b4-EK-m9g"/>
+                                    <constraint firstAttribute="height" constant="293" id="LWz-HD-KvM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5e3-JS-hfL">
+                                <rect key="frame" x="36" y="417" width="324" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HJ9-7T-mDO"/>
+                                    <constraint firstAttribute="width" constant="324" id="TIt-L9-Pou"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yk3-Tg-tVt">
+                                <rect key="frame" x="48" y="671" width="296" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="296" id="N5n-7L-J46"/>
+                                    <constraint firstAttribute="height" constant="45" id="ubf-sK-8Zk"/>
+                                </constraints>
+                                <color key="tintColor" red="0.94328010080000002" green="0.55200769080000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="cart.badge.plus" catalog="system" title="Add" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addCartButton:" destination="iHr-Vy-H4k" eventType="touchUpInside" id="cNB-AW-nC2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsg-sg-O4P">
+                                <rect key="frame" x="36" y="473" width="149" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="92K-Y4-tlL"/>
+                                    <constraint firstAttribute="height" constant="89" id="igd-fg-odz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sbN-4F-TXy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sbN-4F-TXy" firstAttribute="trailing" secondItem="yk3-Tg-tVt" secondAttribute="trailing" constant="49" id="633-XX-vBa"/>
+                            <constraint firstItem="DRk-bf-FH6" firstAttribute="leading" secondItem="sbN-4F-TXy" secondAttribute="leading" id="9gq-P2-feW"/>
+                            <constraint firstItem="yk3-Tg-tVt" firstAttribute="leading" secondItem="sbN-4F-TXy" secondAttribute="leading" constant="48" id="SYa-IK-n1x"/>
+                            <constraint firstItem="DRk-bf-FH6" firstAttribute="trailing" secondItem="sbN-4F-TXy" secondAttribute="trailing" id="Sbr-ai-oh6"/>
+                            <constraint firstItem="yk3-Tg-tVt" firstAttribute="top" secondItem="jsg-sg-O4P" secondAttribute="bottom" constant="109" id="cPr-YP-5YW"/>
+                            <constraint firstItem="jsg-sg-O4P" firstAttribute="top" secondItem="5e3-JS-hfL" secondAttribute="bottom" constant="16" id="eES-QV-dPK"/>
+                            <constraint firstItem="5e3-JS-hfL" firstAttribute="leading" secondItem="sbN-4F-TXy" secondAttribute="leading" constant="36" id="ezX-3t-x2z"/>
+                            <constraint firstItem="sbN-4F-TXy" firstAttribute="trailing" secondItem="jsg-sg-O4P" secondAttribute="trailing" constant="208" id="gWA-Ds-yh6"/>
+                            <constraint firstItem="DRk-bf-FH6" firstAttribute="top" secondItem="sbN-4F-TXy" secondAttribute="top" constant="21" id="iKF-Di-oDp"/>
+                            <constraint firstItem="5e3-JS-hfL" firstAttribute="top" secondItem="DRk-bf-FH6" secondAttribute="bottom" constant="44" id="mwf-2d-pWk"/>
+                            <constraint firstItem="jsg-sg-O4P" firstAttribute="leading" secondItem="sbN-4F-TXy" secondAttribute="leading" constant="36" id="r9O-5s-fEV"/>
+                            <constraint firstItem="sbN-4F-TXy" firstAttribute="trailing" secondItem="5e3-JS-hfL" secondAttribute="trailing" constant="33" id="y4W-Uq-orN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="jsg-sg-O4P" id="pEG-Qe-ZvH"/>
+                        <outlet property="imageView" destination="DRk-bf-FH6" id="Pdd-wv-dBh"/>
+                        <outlet property="nameLabel" destination="5e3-JS-hfL" id="ydd-vK-jhs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7Y-6H-zzg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3864.8854961832058" y="3.5211267605633805"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="GCv-kl-L3i">
             <objects>
@@ -422,6 +500,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cart.badge.plus" catalog="system" width="128" height="106"/>
         <image name="cart.fill.badge.plus" catalog="system" width="128" height="106"/>
         <image name="chinese1" width="900" height="643"/>
         <image name="icon" width="512" height="512"/>
