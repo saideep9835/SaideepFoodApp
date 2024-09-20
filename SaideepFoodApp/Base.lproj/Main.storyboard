@@ -387,17 +387,23 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxJ-dI-fLX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxJ-dI-fLX">
                                 <rect key="frame" x="343" y="60" width="42" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="2ba-xG-9FY"/>
+                                    <constraint firstAttribute="height" constant="35" id="8xX-5n-svw"/>
+                                </constraints>
                                 <color key="tintColor" red="0.94328010080000002" green="0.55200769080000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="cart" catalog="system"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gN9-pD-3Dg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gN9-pD-3Dg">
                                 <rect key="frame" x="278" y="59" width="57" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.96105957890000004" green="0.53671922019999996" blue="0.00079015024369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="Wwl-P7-z18"/>
+                                    <constraint firstAttribute="height" constant="36" id="u2G-QY-Ku8"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.94328010080000002" green="0.55200769080000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -408,8 +414,13 @@
                         <constraints>
                             <constraint firstItem="Baj-y8-ezo" firstAttribute="top" secondItem="mpN-bo-bSY" secondAttribute="top" id="1HN-x1-PSb"/>
                             <constraint firstItem="mpN-bo-bSY" firstAttribute="trailing" secondItem="Baj-y8-ezo" secondAttribute="trailing" id="8zu-ax-goY"/>
+                            <constraint firstItem="WxJ-dI-fLX" firstAttribute="leading" secondItem="gN9-pD-3Dg" secondAttribute="trailing" constant="8" symbolic="YES" id="DSn-Yg-4Z2"/>
                             <constraint firstItem="Baj-y8-ezo" firstAttribute="leading" secondItem="mpN-bo-bSY" secondAttribute="leading" id="Niw-nW-YCk"/>
+                            <constraint firstItem="gN9-pD-3Dg" firstAttribute="top" secondItem="PeK-3D-kgx" secondAttribute="top" constant="59" id="NvV-ue-uoP"/>
+                            <constraint firstItem="gN9-pD-3Dg" firstAttribute="leading" secondItem="PeK-3D-kgx" secondAttribute="leading" constant="278" id="UPA-4r-flT"/>
+                            <constraint firstItem="WxJ-dI-fLX" firstAttribute="top" secondItem="PeK-3D-kgx" secondAttribute="top" constant="60" id="Wfe-5f-eSI"/>
                             <constraint firstItem="mpN-bo-bSY" firstAttribute="bottom" secondItem="Baj-y8-ezo" secondAttribute="bottom" id="eQ9-tt-oul"/>
+                            <constraint firstAttribute="trailing" secondItem="WxJ-dI-fLX" secondAttribute="trailing" constant="8" id="tsD-aU-syD"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
