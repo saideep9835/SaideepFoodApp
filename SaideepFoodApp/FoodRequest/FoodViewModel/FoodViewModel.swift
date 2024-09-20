@@ -11,15 +11,15 @@ protocol APIFetchDelegate: AnyObject {
     func didFetchData(_ data: FoodMenu) // it should not be optional
     func didFailWithError(_ error: Error)
 }
-protocol CartButtonDelegate: AnyObject{
-    func buttonClick(with value: Int)
+
+protocol PriceButtonDelegate: AnyObject{
+    func buttonClick(with price: Int)
 }
 
 class FoodViewModel{
-    
     weak var delegate: APIFetchDelegate?
-    weak var cartDelegate: CartButtonDelegate?
-    private var counter:Int = 0
+    weak var priceDelegate: PriceButtonDelegate?
+    var priceValue:Int = 0
     
     func fetchData(){
         guard let apiUrl = URL(string: Constants.apiUrl.rawValue) else{ print("Invalid URL")
@@ -36,8 +36,8 @@ class FoodViewModel{
         }
     }
     
-    func cartButton(){
-        counter += 1
-        self.cartDelegate?.buttonClick(with: counter)
+    func cartButton(price: Int){
+        priceValue += price
+        self.priceDelegate?.buttonClick(with: priceValue)
     }
 }

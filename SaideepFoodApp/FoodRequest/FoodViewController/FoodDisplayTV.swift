@@ -7,24 +7,32 @@
 
 import UIKit
 import Kingfisher
-class FoodDisplayTV: UIViewController{
+class FoodDisplayTV: UIViewController, PriceButtonDelegate{
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var priceLabel: UILabel!
     //@IBOutlet weak var incrementCart: UIButton!
     var selectedFoodCategory: [FoodItem] = []
-    //let viewModel = FoodViewModel()
+    let viewModel = FoodViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        //viewModel.cartDelegate = self
+        viewModel.priceDelegate = self
         // Do any additional setup after loading the view.
-        //incrementCart.setTitle("0", for: .normal)
+        priceLabel.text = "\(0)"
+    }
+    
+    func buttonClick(with price: Int) {
+        priceLabel.text = "\(price)"
     }
     
     @IBAction func buttonClicked(_ sender: UIButton) {
-        //viewModel.cartButton()
+        let itemIndex = sender.tag
+                let selectedItem = selectedFoodCategory[itemIndex]
+                let itemPrice = selectedItem.price
+        viewModel.cartButton(price: itemPrice)
     }
     
 }
