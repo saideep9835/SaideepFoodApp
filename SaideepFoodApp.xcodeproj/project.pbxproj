@@ -10,6 +10,9 @@
 		A56216F62C9CACDB008D2FFA /* FoodDisplayTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56216F52C9CACDB008D2FFA /* FoodDisplayTV.swift */; };
 		A56216F82C9CAE26008D2FFA /* FoodDisplayTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56216F72C9CAE26008D2FFA /* FoodDisplayTVC.swift */; };
 		A56216FA2C9D129B008D2FFA /* FoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56216F92C9D129A008D2FFA /* FoodDetailViewController.swift */; };
+		A56FBC772C9E21C700F6FFAA /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56FBC762C9E21C700F6FFAA /* CartViewController.swift */; };
+		A56FBC792CA0E5C300F6FFAA /* CartViewTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56FBC782CA0E5C300F6FFAA /* CartViewTVC.swift */; };
+		A56FBD102CA3737400F6FFAA /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56FBD0F2CA3737400F6FFAA /* ConfirmViewController.swift */; };
 		A57D73352C9C451100852295 /* FoodGroupTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D73342C9C451100852295 /* FoodGroupTVC.swift */; };
 		A57D73852C9C836C00852295 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A57D73842C9C836C00852295 /* Kingfisher */; };
 		A5D3A4BB2C9B5A9E00421592 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3A4BA2C9B5A9E00421592 /* AppDelegate.swift */; };
@@ -53,6 +56,9 @@
 		A56216F52C9CACDB008D2FFA /* FoodDisplayTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDisplayTV.swift; sourceTree = "<group>"; };
 		A56216F72C9CAE26008D2FFA /* FoodDisplayTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDisplayTVC.swift; sourceTree = "<group>"; };
 		A56216F92C9D129A008D2FFA /* FoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailViewController.swift; sourceTree = "<group>"; };
+		A56FBC762C9E21C700F6FFAA /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		A56FBC782CA0E5C300F6FFAA /* CartViewTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewTVC.swift; sourceTree = "<group>"; };
+		A56FBD0F2CA3737400F6FFAA /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		A57D73342C9C451100852295 /* FoodGroupTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodGroupTVC.swift; sourceTree = "<group>"; };
 		A5D3A4B72C9B5A9E00421592 /* SaideepFoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaideepFoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D3A4BA2C9B5A9E00421592 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +115,7 @@
 			children = (
 				A57D73342C9C451100852295 /* FoodGroupTVC.swift */,
 				A56216F72C9CAE26008D2FFA /* FoodDisplayTVC.swift */,
+				A56FBC782CA0E5C300F6FFAA /* CartViewTVC.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -151,7 +158,6 @@
 				A5D3A4EE2C9B5E7900421592 /* DataModels */,
 				A5D3A4ED2C9B5CCD00421592 /* SignIn */,
 				A5D3A4F92C9B72B100421592 /* Services */,
-				A5D3A4EC2C9B5CBD00421592 /* SignUp */,
 				A5D3A4BE2C9B5A9E00421592 /* ViewController.swift */,
 				A5D3A4C02C9B5A9E00421592 /* Main.storyboard */,
 				A5D3A4F12C9B635B00421592 /* SplashScreen.storyboard */,
@@ -177,13 +183,6 @@
 				A5D3A4DD2C9B5AA000421592 /* SaideepFoodAppUITestsLaunchTests.swift */,
 			);
 			path = SaideepFoodAppUITests;
-			sourceTree = "<group>";
-		};
-		A5D3A4EC2C9B5CBD00421592 /* SignUp */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SignUp;
 			sourceTree = "<group>";
 		};
 		A5D3A4ED2C9B5CCD00421592 /* SignIn */ = {
@@ -236,6 +235,8 @@
 				A5D3A5032C9B78CD00421592 /* FoodViewController.swift */,
 				A56216F52C9CACDB008D2FFA /* FoodDisplayTV.swift */,
 				A56216F92C9D129A008D2FFA /* FoodDetailViewController.swift */,
+				A56FBC762C9E21C700F6FFAA /* CartViewController.swift */,
+				A56FBD0F2CA3737400F6FFAA /* ConfirmViewController.swift */,
 			);
 			path = FoodViewController;
 			sourceTree = "<group>";
@@ -390,14 +391,17 @@
 				A5D3A4F42C9B674B00421592 /* SignInViewController.swift in Sources */,
 				A5D3A5072C9B79D300421592 /* Constants.swift in Sources */,
 				A56216FA2C9D129B008D2FFA /* FoodDetailViewController.swift in Sources */,
+				A56FBC792CA0E5C300F6FFAA /* CartViewTVC.swift in Sources */,
 				A5D3A4BF2C9B5A9E00421592 /* ViewController.swift in Sources */,
 				A56216F82C9CAE26008D2FFA /* FoodDisplayTVC.swift in Sources */,
 				A5D3A4FD2C9B773400421592 /* FoodAPI.swift in Sources */,
 				A5D3A4F82C9B72A500421592 /* SignInViewModel.swift in Sources */,
+				A56FBD102CA3737400F6FFAA /* ConfirmViewController.swift in Sources */,
 				A5D3A4BB2C9B5A9E00421592 /* AppDelegate.swift in Sources */,
 				A5D3A5012C9B78AB00421592 /* FoodViewModel.swift in Sources */,
 				A57D73352C9C451100852295 /* FoodGroupTVC.swift in Sources */,
 				A5D3A5042C9B78CD00421592 /* FoodViewController.swift in Sources */,
+				A56FBC772C9E21C700F6FFAA /* CartViewController.swift in Sources */,
 				A5D3A4FB2C9B760C00421592 /* FoodMenu.swift in Sources */,
 				A5D3A4BD2C9B5A9E00421592 /* SceneDelegate.swift in Sources */,
 				A5D3A4F62C9B707500421592 /* UserDetails.swift in Sources */,

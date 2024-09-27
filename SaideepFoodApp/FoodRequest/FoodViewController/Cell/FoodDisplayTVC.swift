@@ -13,6 +13,7 @@ class FoodDisplayTVC: UITableViewCell {
     @IBOutlet weak var itemPriceLabel: UILabel!
     @IBOutlet weak var itemWeightLabel: UILabel!
     @IBOutlet weak var itemDescriptionLabel: UILabel!
+    @IBOutlet weak var priceIncrementButton: UIButton!
     @IBOutlet weak var itemNameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()

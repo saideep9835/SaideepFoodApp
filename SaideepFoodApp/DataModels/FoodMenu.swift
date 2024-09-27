@@ -50,4 +50,8 @@ struct FoodItem: Codable {
         case price
         case imageURL = "image_url"
     }
+    
+//    static func ==(lhs: FoodItem, rhs: FoodItem) -> Bool {
+//            return lhs.name == rhs.name && lhs.price == rhs.price
+//        }
 }
